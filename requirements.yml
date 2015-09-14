@@ -3,8 +3,8 @@
 - src: https://github.com/superlumic/ansible-role-homebrew.git
   name: homebrew
 
-- src: https://github.com/superlumic/ansible-role-computername.git
-  name: computername
-
 - src: https://github.com/superlumic/ansible-role-osx-defaults.git
   name: osx-defaults
+
+- src: https://github.com/superlumic/ansible-role-computername.git
+  name: computername
