@@ -19,7 +19,7 @@
 
   roles:
     - profile-all
-    - provile-developer
+    - profile-developer
 
   vars:
     - computername: SuperLumic
