@@ -1,5 +1,8 @@
 ---
 
+- name: tap caskroom/versions
+  homebrew_tap: tap=caskroom/versions state=present
+
 - name: install developer brew applications
   homebrew: name={{item}} state=latest
   with_items:
