@@ -8,3 +8,6 @@
 
 - src: https://github.com/superlumic/ansible-role-computername.git
   name: computername
+
+- src: https://github.com/superlumic/ansible-role-cli.git
+  name: cli
