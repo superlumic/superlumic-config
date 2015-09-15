@@ -3,11 +3,23 @@
 - hosts: 127.0.0.1
   connection: local
 
-#  tasks:
-#    -
+  tasks:
+    - name: install personal cask applications
+      homebrew_cask: name={{item}} state=latest
+      with_items:
+        - spotify
+        - istat-menus
+        - dropbox
+        - kaleidoscope
+        - alfred
+        - hazel
+        - sonos
+        - tower
+        - skype
 
   roles:
     - profile-all
+    - provile-developer
 
   vars:
     - computername: SuperLumic

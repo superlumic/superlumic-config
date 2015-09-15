@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Roderik van der Veer
+  description: Ansible profile role for developers
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+    - name: Darwin
+      versions:
+        - all
+  categories:
+    - system
+dependencies:
+  - computername
+  - cli
+  - homebrew
+  - profile-all

@@ -1,0 +1,21 @@
+---
+
+- name: install developer brew applications
+  homebrew: name={{item}} state=latest
+  with_items:
+    - wget
+    - pwgen
+    - xmlstarlet
+    - htop-osx
+    - watch
+    - rsync
+
+- name: install developer cask applications
+  homebrew_cask: name={{item}} state=latest
+  with_items:
+    - imageoptim
+    - phpstorm
+    - sequel-pro
+    - java6
+    - java7
+    - java
