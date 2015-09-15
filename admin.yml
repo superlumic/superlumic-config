@@ -5,7 +5,7 @@
 
   tasks:
     - name: install personal cask applications
-      homebrew_cask: name={{item}} state=latest
+      homebrew_cask: name={{item}} state=present
       with_items:
         - spotify
         - istat-menus
