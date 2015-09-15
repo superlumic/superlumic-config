@@ -11,5 +11,5 @@ galaxy_info:
   categories:
     - system
 dependencies:
-  - homebrew
   - computername
+  - bash4
