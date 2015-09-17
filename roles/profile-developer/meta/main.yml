@@ -14,5 +14,6 @@ dependencies:
   - computername
   - cli
   - homebrew
+  - mysql
   - php
   - profile-all

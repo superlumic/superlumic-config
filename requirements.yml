@@ -12,5 +12,8 @@
 - src: https://github.com/superlumic/ansible-role-cli.git
   name: cli
 
+- src: https://github.com/superlumic/ansible-role-mysql.git
+  name: mysql
+
 - src: https://github.com/superlumic/ansible-role-php.git
   name: php
