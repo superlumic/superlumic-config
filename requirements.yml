@@ -17,3 +17,6 @@
 
 - src: https://github.com/superlumic/ansible-role-php.git
   name: php
+
+- src: https://github.com/superlumic/ansible-role-sublimetext.git
+  name: sublimetext

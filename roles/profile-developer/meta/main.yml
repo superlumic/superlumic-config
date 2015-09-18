@@ -16,4 +16,5 @@ dependencies:
   - homebrew
   - mysql
   - php
+  - sublimetext
   - profile-all
