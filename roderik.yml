@@ -22,7 +22,7 @@
     - profile-developer
 
   vars:
-    - computername: SuperLumic
+    - computername: spectr
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"
