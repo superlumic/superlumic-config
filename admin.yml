@@ -33,7 +33,7 @@
         - dest: "BracketHighlighter"
           repo: "https://github.com/facelessuser/BracketHighlighter.git"
           version: "master"
-        - dest: "Theme - Soda",
+        - dest: "Theme - Soda"
           repo: "https://github.com/buymeasoda/soda-theme.git"
           version: "master"
         - dest: "Base16"
