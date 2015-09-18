@@ -23,3 +23,5 @@
 
   vars:
     - computername: SuperLumic
+    - osx_defaults:
+        - avoid_creating_ds_store_files_on_network_volumes
