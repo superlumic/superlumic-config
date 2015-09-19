@@ -16,6 +16,7 @@
         - sonos
         - tower
         - skype
+        - bartender
 
   roles:
     - profile-all
