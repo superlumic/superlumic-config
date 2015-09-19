@@ -23,6 +23,8 @@
 
   vars:
     - computername: spectr
+    - git_user_name: Roderik van der Veer
+    - git_user_email: roderik.van.der.veer@kunstmaan.be
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"
