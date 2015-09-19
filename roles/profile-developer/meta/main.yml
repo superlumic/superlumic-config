@@ -17,4 +17,5 @@ dependencies:
   - mysql
   - php
   - sublimetext
+  - skylab
   - profile-all
