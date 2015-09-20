@@ -18,4 +18,5 @@ dependencies:
   - php
   - sublimetext
   - skylab
+  - node
   - profile-all

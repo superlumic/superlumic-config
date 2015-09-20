@@ -21,5 +21,8 @@
 - src: https://github.com/superlumic/ansible-role-sublimetext.git
   name: sublimetext
 
+- src: https://github.com/superlumic/ansible-role-node.git
+  name: node
+
 - src: https://github.com/superlumic/ansible-role-skylab.git
   name: skylab
