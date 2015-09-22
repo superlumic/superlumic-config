@@ -17,6 +17,20 @@
         - tower
         - skype
         - bartender
+    - name: personal ssh config
+      copy:
+        src: ssh_config
+        dest: /etc/ssh/ssh_config
+    - name: add to sudoers without password
+      become: yes
+      lineinfile: >
+        dest=/etc/sudoers
+        regexp="{{ item.regexp }}"
+        line="{{ item.line }}"
+        state=present
+        create=true
+      with_items:
+        - { regexp: '^roderik', line: 'roderik ALL=(ALL) NOPASSWD: ALL' }
 
   roles:
     - profile-all

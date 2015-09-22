@@ -1,0 +1,5 @@
+Host *.cloud.kunstmaan.com
+   Port 9999
+
+Host git.kunstmaan.be
+   Port 9999
