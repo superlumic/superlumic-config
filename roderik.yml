@@ -18,6 +18,7 @@
         - skype
         - bartender
     - name: personal ssh config
+      become: yes
       copy:
         src: files/ssh_config
         dest: /etc/ssh/ssh_config
