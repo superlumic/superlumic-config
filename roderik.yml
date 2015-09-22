@@ -19,7 +19,7 @@
         - bartender
     - name: personal ssh config
       copy:
-        src: ssh_config
+        src: files/ssh_config
         dest: /etc/ssh/ssh_config
     - name: add to sudoers without password
       become: yes
