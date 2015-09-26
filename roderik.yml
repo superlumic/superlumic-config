@@ -17,6 +17,7 @@
         - tower
         - skype
         - bartender
+        - things
     - name: personal ssh config
       become: yes
       copy:
