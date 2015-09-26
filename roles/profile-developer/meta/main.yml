@@ -19,4 +19,5 @@ dependencies:
   - sublimetext
   - skylab
   - node
+  - vim
   - profile-all

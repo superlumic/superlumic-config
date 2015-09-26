@@ -27,5 +27,8 @@
 - src: https://github.com/superlumic/ansible-role-postgresql.git
   name: postgresql
 
+- src: https://github.com/superlumic/ansible-role-vim.git
+  name: vim
+
 - src: https://github.com/superlumic/ansible-role-skylab.git
   name: skylab
