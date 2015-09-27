@@ -1,34 +1,34 @@
 ---
 
 - src: https://github.com/superlumic/ansible-role-homebrew.git
-  name: homebrew
+  name: roderik.superlumic-homebrew
 
 - src: https://github.com/superlumic/ansible-role-osx-defaults.git
-  name: osx-defaults
+  name: roderik.superlumic-osx-defaults
 
 - src: https://github.com/superlumic/ansible-role-computername.git
-  name: computername
+  name: roderik.superlumic-computername
 
 - src: https://github.com/superlumic/ansible-role-cli.git
-  name: cli
+  name: roderik.superlumic-cli
 
 - src: https://github.com/superlumic/ansible-role-mysql.git
-  name: mysql
+  name: roderik.superlumic-mysql
 
 - src: https://github.com/superlumic/ansible-role-php.git
-  name: php
+  name: roderik.superlumic-php
 
 - src: https://github.com/superlumic/ansible-role-sublimetext.git
-  name: sublimetext
+  name: roderik.superlumic-sublimetext
 
 - src: https://github.com/superlumic/ansible-role-node.git
-  name: node
+  name: roderik.superlumic-node
 
 - src: https://github.com/superlumic/ansible-role-postgresql.git
-  name: postgresql
+  name: roderik.superlumic-postgresql
 
 - src: https://github.com/superlumic/ansible-role-vim.git
-  name: vim
+  name: roderik.superlumic-vim
 
 - src: https://github.com/superlumic/ansible-role-skylab.git
-  name: skylab
+  name: roderik.superlumic-skylab
