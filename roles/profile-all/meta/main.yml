@@ -11,5 +11,5 @@ galaxy_info:
   categories:
     - system
 dependencies:
-  - computername
-  - cli
+  - roderik.superlumic-computername
+  - roderik.superlumic-cli
