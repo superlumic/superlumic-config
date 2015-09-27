@@ -1,0 +1,10 @@
+---
+language: objective-c
+
+os:
+  - osx
+
+osx_image: xcode7
+
+script:
+  - curl -s https://raw.githubusercontent.com/superlumic/superlumic/master/superlumic | bash -s
