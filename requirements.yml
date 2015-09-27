@@ -30,5 +30,8 @@
 - src: https://github.com/superlumic/ansible-role-vim.git
   name: roderik.superlumic-vim
 
+- src: https://github.com/superlumic/ansible-role-modjk.git
+  name: roderik.superlumic-modjk
+
 - src: https://github.com/superlumic/ansible-role-skylab.git
   name: roderik.superlumic-skylab
