@@ -12,6 +12,7 @@
     - htop-osx
     - watch
     - rsync
+    - git-flow
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
