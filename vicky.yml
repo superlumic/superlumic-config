@@ -28,6 +28,11 @@
       copy:
         src: files/ssh_config
         dest: /etc/ssh_config
+    - name: personal ssh config in another location
+      become: yes
+      copy:
+        src: files/ssh_config
+        dest: /etc/ssh/ssh_config
     - name: add to sudoers without password
       become: yes
       lineinfile: >
