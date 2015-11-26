@@ -49,7 +49,7 @@
     - profile-developer
 
   vars:
-    - computername: atria
+    - computername: mimas
     - git_user_name: Nick Lauryssen
     - git_user_email: nick.lauryssen@kunstmaan.be
     - sublime_packages:
