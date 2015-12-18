@@ -16,7 +16,6 @@
         - sonos
         - tower
         - skype
-        - bartender
         - things
         - sketch
         - superduper
@@ -40,7 +39,7 @@
       become: yes
       copy:
         src: files/ssh_config
-        dest: /etc/ssh/ssh_config        
+        dest: /etc/ssh/ssh_config
     - name: add to sudoers without password
       become: yes
       lineinfile: >
@@ -60,6 +59,7 @@
     - computername: spectr
     - git_user_name: Roderik van der Veer
     - git_user_email: roderik.van.der.veer@kunstmaan.be
+    - php_version: 70
     - sublime_packages:
         - dest: "SideBarEnhancements"
           repo: "https://github.com/titoBouzout/SideBarEnhancements"
