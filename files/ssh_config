@@ -1,10 +1,13 @@
+TCPKeepAlive yes
+ServerAliveInterval 15
+ServerAliveCountMax 6
+Compression yes
+ControlMaster auto
+ControlPath /tmp/%r@%h:%p
+ControlPersist yes
+
 Host *.cloud.kunstmaan.com
-   ServerAliveInterval 60
    Port 9999
 
 Host git.kunstmaan.be
-   ServerAliveInterval 60
    Port 9999
-
-Host *
-  ServerAliveInterval 60
