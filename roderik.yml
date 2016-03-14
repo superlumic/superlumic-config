@@ -156,10 +156,6 @@
         key: 'NSQuitAlwaysKeepsWindows'
         type: boolean
         value: false
-      - domain: 'NSGlobalDomain'
-        key: 'ApplePressAndHoldEnabled'
-        type: boolean
-        value: false
       - domain: 'com.apple.desktopservices'
         key: 'DSDontWriteNetworkStores'
         type: boolean
