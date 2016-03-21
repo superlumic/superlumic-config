@@ -56,7 +56,7 @@
 
   vars:
     - computername: ddcarr
-    - git_user_name: pdxdiver	
+    - git_user_name: pdxdiver
     - git_user_email: ddcarr@gmail.com
     - php_version: 70
     - sublime_packages:
