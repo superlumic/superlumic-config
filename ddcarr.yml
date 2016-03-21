@@ -7,18 +7,8 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
-        - spotify
         - istat-menus
         - dropbox
-        - kaleidoscope
-        - alfred
-        - hazel
-        - sonos
-        - tower
-        - skype
-        - things
-        - sketch
-        - superduper
     - name: create ssh directory
       become: yes
       file:
@@ -55,7 +45,7 @@
     - profile-developer
 
   vars:
-    - computername: ddcarr
+    - computername: godsmack
     - git_user_name: pdxdiver
     - git_user_email: ddcarr@gmail.com
     - php_version: 70
