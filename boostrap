@@ -1,4 +1,5 @@
 #!/bin/bash
+# OSX developer bootstrap ansible wrapper
 
 BGreen='\e[1;32m'       # Green
 BRed='\e[1;31m'         # Red
@@ -7,13 +8,6 @@ Color_Off='\e[0m'       # Text Reset
 function setStatusMessage {
     printf "${IRed} --> ${BGreen}$1${Color_Off}\n" 1>&2
 }
-
-printf "${BGreen}   _________                         .__                .__        ${Color_Off}\n"
-printf "${BGreen}  /   _____/__ ________   ___________|  |  __ __  _____ |__| ____  ${Color_Off}\n"
-printf "${BGreen}  \_____  \|  |  \____ \_/ __ \_  __ \  | |  |  \/     \|  |/ ___\ ${Color_Off}\n"
-printf "${BGreen}  /        \  |  /  |_> >  ___/|  | \/  |_|  |  /  Y Y  \  \  \___ ${Color_Off}\n"
-printf "${BGreen} /_______  /____/|   __/ \___  >__|  |____/____/|__|_|  /__|\___  >${Color_Off}\n"
-printf "${BGreen}         \/      |__|        \/ http://superlumic.com \/        \/ ${Color_Off}\n\n"
 
 setStatusMessage "Checking if we need to ask for a sudo: password"
 
@@ -127,10 +121,5 @@ if [ -f "config/$username.yml" ]; then
     setStatusMessage "Running the ansible playbook for $username"
     ansible-playbook -i "localhost," config/$username.yml
 else
-    if [ "travis" = "$username" ]; then
-        setStatusMessage "Running the ansible playbook for $username but use roderik.yml as fallback"
-        ansible-playbook -i "localhost," config/roderik.yml
-    else
-        triggerError "No playbook for $username found"
-    fi
+    triggerError "No playbook for $username found"
 fi
