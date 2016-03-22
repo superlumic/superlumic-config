@@ -1,5 +1,4 @@
 # osx-workstation-bootstrap
-# inspired by and uses superlumic playbooks
 
 This is the default configuration "role" for "superlumic". You will want
 to fork this one and create your own "username.yml". Use the roles
