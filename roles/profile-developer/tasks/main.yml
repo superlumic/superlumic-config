@@ -12,3 +12,6 @@
   homebrew_cask: name={{item}} state=present
   with_items:
     - atom
+    - virtualbox
+    - vagrant
+    - vagrant-manager
