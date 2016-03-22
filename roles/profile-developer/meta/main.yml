@@ -11,10 +11,8 @@ galaxy_info:
   categories:
     - system
 dependencies:
-  - roderik.superlumic-computername
   - roderik.superlumic-cli
   - roderik.superlumic-homebrew
-  - roderik.superlumic-skylab
   - roderik.superlumic-node
   - roderik.superlumic-vim
   - profile-all
