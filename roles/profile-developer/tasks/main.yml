@@ -8,11 +8,19 @@
   with_items:
     - wget
 
-- name: install developer cask applications
-  homebrew_cask: name={{item}} state=present
-  with_items:
-    - atom
-    - chefdk
-    - virtualbox
-    - vagrant
-    - vagrant-manager
+- name: install atom
+  homebrew_cask: atom state=present
+  
+- name: install chefdk
+  homebrew_cask: chefdk state=present
+  
+- name: install virtualbox
+  homebrew_cask: virtualbox state=present
+  
+- name: install vagrant
+  homebrew_cask: vagrant state=present
+  
+- name: install vagrant manager
+  homebrew_cask: vagrant-manager state=present
+
+
