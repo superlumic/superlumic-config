@@ -42,6 +42,7 @@
 
   roles:
     - profile-all
+    - profile-developer
     
   vars:
     - computername: godsmack
