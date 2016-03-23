@@ -3,9 +3,6 @@
 - src: https://github.com/superlumic/ansible-role-homebrew.git
   name: roderik.superlumic-homebrew
 
-- src: https://github.com/superlumic/ansible-role-osx-defaults.git
-  name: roderik.superlumic-osx-defaults
-
 - src: https://github.com/superlumic/ansible-role-cli.git
   name: roderik.superlumic-cli
 
