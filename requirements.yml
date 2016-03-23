@@ -3,15 +3,8 @@
 - src: https://github.com/superlumic/ansible-role-homebrew.git
   name: roderik.superlumic-homebrew
 
-- src: https://github.com/superlumic/ansible-role-cli.git
-  name: roderik.superlumic-cli
-
 - src: https://github.com/superlumic/ansible-role-node.git
   name: roderik.superlumic-node
 
-- src: https://github.com/superlumic/ansible-role-vim.git
-  name: roderik.superlumic-vim
-
 - src: https://github.com/dstil/ansible-aws-cli
   name: dstil.ansible-aws-cli
-
