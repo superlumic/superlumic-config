@@ -9,18 +9,18 @@
     - wget
 
 - name: install atom
-  homebrew_cask: atom state=present
+  homebrew_cask: name=atom state=present
   
 - name: install chefdk
-  homebrew_cask: chefdk state=present
+  homebrew_cask: name=chefdk state=present
   
 - name: install virtualbox
-  homebrew_cask: virtualbox state=present
+  homebrew_cask: name=virtualbox state=present
   
 - name: install vagrant
-  homebrew_cask: vagrant state=present
+  homebrew_cask: name=vagrant state=present
   
 - name: install vagrant manager
-  homebrew_cask: vagrant-manager state=present
+  homebrew_cask: name=vagrant-manager state=present
 
 
