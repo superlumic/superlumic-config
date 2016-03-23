@@ -47,6 +47,11 @@
     - computername: godsmack
     - git_user_name: pdxdiver
     - git_user_email: ddcarr@gmail.com
+    - aws_output_format: '{{ lookup('ini', 'output section=AWS_CLI file=~/.aws/aws_config') }}'
+    - aws_region: '{{ lookup('ini', 'region section=AWS_CLI file=~/.aws/aws_config') }}'
+    - aws_access_key_id: '{{ lookup('ini', 'access_key_id section=AWS_CLI file=~/.aws/aws_config') }}'
+    - aws_secret_access_key: '{{ lookup('ini', 'secret_key section=AWS_CLI file=~/.aws/aws_config') }}'
+
     - osx_defaults:
       - domain: 'com.apple.dock'
         key: 'autohide'

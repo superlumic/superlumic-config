@@ -15,3 +15,6 @@
 - src: https://github.com/superlumic/ansible-role-vim.git
   name: roderik.superlumic-vim
 
+- src: https://github.com/dstil/ansible-aws-cli
+  name: dstil.ansible-aws-cli
+
