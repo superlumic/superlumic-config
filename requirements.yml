@@ -2,5 +2,3 @@
 
 - src: https://github.com/dstil/ansible-aws-cli
   name: dstil.ansible-aws-cli
-- src: https://github.com/dstil/ansible-aws-cli
-  name: dstil.ansible-aws-cli 

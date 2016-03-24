@@ -8,19 +8,26 @@
   with_items:
     - wget
 
+- name: install aws cli
+  roles: dstil.ansible-aws-cli
+
+- name: install docker tool box
+  homebrew_cask: name=dockertoolboxstate=present
+
 - name: install atom
   homebrew_cask: name=atom state=present
-  
+
 - name: install chefdk
   homebrew_cask: name=chefdk state=present
-  
+
 - name: install virtualbox
   homebrew_cask: name=virtualbox state=present
-  
+
 - name: install vagrant
   homebrew_cask: name=vagrant state=present
-  
+
 - name: install vagrant manager
   homebrew_cask: name=vagrant-manager state=present
 
-
+- name: install docker toolbox
+  homebrew_cask: name=dockertoolboxstate=present
