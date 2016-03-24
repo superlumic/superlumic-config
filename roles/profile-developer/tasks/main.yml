@@ -7,10 +7,7 @@
   homebrew: name={{item}} state=latest
   with_items:
     - wget
-
-- roles:
-  -dstil.ansible-aws-cli
-
+    
 - name: install docker tool box
   homebrew_cask: name=dockertoolboxstate=present
 

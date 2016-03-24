@@ -12,3 +12,4 @@ galaxy_info:
     - system
 dependencies:
   - profile-all
+  - dstil.ansible-aws-cli
