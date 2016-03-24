@@ -8,8 +8,7 @@
   with_items:
     - wget
 
-- name: install aws cli
-  roles: dstil.ansible-aws-cli
+- roles: dstil.ansible-aws-cli
 
 - name: install docker tool box
   homebrew_cask: name=dockertoolboxstate=present
