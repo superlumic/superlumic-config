@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Roderik van der Veer
+  author: Dan Carr
   description: Ansible profile role for developers
   license: MIT
   min_ansible_version: 1.2
@@ -11,8 +11,4 @@ galaxy_info:
   categories:
     - system
 dependencies:
-  - roderik.superlumic-cli
-  - roderik.superlumic-homebrew
-  - roderik.superlumic-node
-  - roderik.superlumic-vim
   - profile-all
