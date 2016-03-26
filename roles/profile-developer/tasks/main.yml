@@ -19,7 +19,7 @@
     - docker
     - docker-machine
     - docker-machine-driver-xhyve
-    - iterm-beta
+    - iterm2-beta
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
