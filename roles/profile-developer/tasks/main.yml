@@ -10,7 +10,7 @@
     - awscli
     
 - name: install docker tool box
-  homebrew_cask: name=dockertoolboxstate=present
+  homebrew_cask: name=dockertoolbox state=present
 
 - name: install atom
   homebrew_cask: name=atom state=present
