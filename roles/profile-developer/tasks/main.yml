@@ -3,6 +3,9 @@
 - name: tap caskroom/versions
   homebrew_tap: tap=caskroom/versions state=present
 
+- name: tap codekitchen/dinghy
+  homebrew_tap: tap=codekitchen/dinghy state=present
+
 - name: install developer brew applications
   homebrew: name={{item}} state=latest
   with_items:
@@ -12,6 +15,10 @@
     - htop
     - watch
     - rsync
+    - dinghy
+    - docker
+    - docker-machine
+    - docker-machine-driver-xhyve
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
@@ -19,3 +26,6 @@
     - phpstorm
     - sequel-pro
     - java
+
+- name: set xhyve permissions
+  shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve && chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
