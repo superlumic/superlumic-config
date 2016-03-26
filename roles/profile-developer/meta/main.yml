@@ -12,4 +12,4 @@ galaxy_info:
     - system
 dependencies:
   - profile-all
-  - geerlingguy.homebrew
+  - roderik.superlumic-homebrew
