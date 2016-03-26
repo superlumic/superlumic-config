@@ -19,7 +19,6 @@
     - docker
     - docker-machine
     - docker-machine-driver-xhyve
-    - iterm2-beta
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
@@ -27,6 +26,7 @@
     - phpstorm
     - sequel-pro
     - java
-
+    - iterm2-beta
+    
 - name: set xhyve permissions
   shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve && chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
