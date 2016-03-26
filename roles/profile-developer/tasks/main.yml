@@ -9,18 +9,13 @@
     - wget
     - pwgen
     - xmlstarlet
-    - htop-osx
+    - htop
     - watch
     - rsync
-    - git-flow
-    - ant
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
   with_items:
-    - imageoptim
     - phpstorm
     - sequel-pro
-    - java6
-    - java7
     - java
