@@ -2,3 +2,6 @@
 
 - src: https://github.com/dstil/ansible-aws-cli
   name: dstil.ansible-aws-cli
+- src: https://github.com/geerlingguy/ansible-role-homebrew
+  name: geerlingguy.homebrew
+
