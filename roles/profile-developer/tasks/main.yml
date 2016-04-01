@@ -1,11 +1,5 @@
 ---
 
-- name: tap caskroom/versions
-  homebrew_tap: tap=caskroom/versions state=present
-
-- name: tap codekitchen/dinghy
-  homebrew_tap: tap=codekitchen/dinghy state=present
-
 - name: install developer brew applications
   homebrew: name={{item}} state=latest
   with_items:
@@ -27,7 +21,7 @@
     - sequel-pro
     - java
     - iterm2-beta
-    
+
 - name: set xhyve permissions
   shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve && chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
   become: yes
