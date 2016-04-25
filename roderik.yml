@@ -15,6 +15,9 @@
         - sonos
         - tower
         - superduper
+        - google-chrome
+        - keepingyouawake
+        - microsoft-office
     - name: create ssh directory
       become: yes
       file:
