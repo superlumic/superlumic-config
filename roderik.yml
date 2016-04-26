@@ -83,8 +83,8 @@
         - dest: "Ansible"
           repo: "https://github.com/clifford-github/sublime-ansible.git"
           version: "master"
-    - sublime_text_color_scheme: "Packages/Base16/base16-eighties.light.tmTheme"
-    - sublime_text_theme: "Soda Light 3.sublime-theme"
+    - sublime_text_color_scheme: "Packages/Base16/base16-eighties.dark.tmTheme"
+    - sublime_text_theme: "Soda Dark 3.sublime-theme"
     - osx_defaults:
       - domain: 'com.apple.dock'
         key: 'autohide'
