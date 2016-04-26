@@ -18,6 +18,7 @@
         - google-chrome
         - keepingyouawake
         - microsoft-office
+        - iterm2-beta
     - name: create ssh directory
       become: yes
       file:
