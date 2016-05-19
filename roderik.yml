@@ -18,7 +18,7 @@
         - google-chrome
         - keepingyouawake
         - microsoft-office
-        - iterm2-beta
+        - atom
     - name: create ssh directory
       become: yes
       file:

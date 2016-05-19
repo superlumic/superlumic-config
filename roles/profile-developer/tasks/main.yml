@@ -17,5 +17,6 @@
   homebrew_cask: name={{item}} state=present
   with_items:
     - phpstorm
+    - webstorm
     - sequel-pro
     - java
