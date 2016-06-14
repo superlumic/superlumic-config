@@ -5,5 +5,5 @@
   with_items:
     - google-drive
     - vlc
-    - keepingyouawake
+    #- keepingyouawake
 
