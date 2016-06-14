@@ -18,7 +18,7 @@
         - google-chrome
         #- keepingyouawake
         - microsoft-office
-        - atom
+        #- atom
     - name: create ssh directory
       become: yes
       file:
