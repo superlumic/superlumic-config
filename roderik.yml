@@ -16,7 +16,7 @@
         #- tower
         - superduper
         - google-chrome
-        - keepingyouawake
+        #- keepingyouawake
         - microsoft-office
         - atom
     - name: create ssh directory
