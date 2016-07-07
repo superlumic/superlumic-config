@@ -8,17 +8,18 @@
       homebrew_cask: name={{item}} state=present
       with_items:
         - spotify
-        #- istat-menus
+        - istat-menus
         - dropbox
-        #- kaleidoscope
+        - kaleidoscope
         - hazel
         - sonos
-        #- tower
+        - tower
         - superduper
         - google-chrome
-        #- keepingyouawake
+        - keepingyouawake
         - microsoft-office
-        #- atom
+        - atom
+        - bartender
     - name: create ssh directory
       become: yes
       file:
