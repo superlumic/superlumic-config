@@ -58,7 +58,7 @@
   vars:
     - computername: spectr
     - git_user_name: Roderik van der Veer
-    - git_user_email: roderik.van.der.veer@kunstmaan.be
+    - git_user_email: roderik@settlemint.io
     - php_version: 70
     - sublime_packages:
         - dest: "SideBarEnhancements"
