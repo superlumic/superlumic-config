@@ -16,6 +16,6 @@ dependencies:
   - roderik.superlumic-homebrew
   #- roderik.superlumic-php
   #- roderik.superlumic-sublimetext
-  - roderik.superlumic-node
+  #- roderik.superlumic-node
   - roderik.superlumic-vim
   - profile-all
