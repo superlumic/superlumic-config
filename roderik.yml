@@ -4,6 +4,10 @@
   connection: local
 
   tasks:
+    - name: install node
+      homebrew: name={{item}} state=latest
+      with_items:
+        - node
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
