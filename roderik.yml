@@ -7,7 +7,7 @@
     - name: install node
       homebrew: name={{item}} state=latest
       with_items:
-        - node
+        - node6-lts
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
