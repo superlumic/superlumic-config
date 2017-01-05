@@ -8,6 +8,16 @@
       homebrew: name={{item}} state=latest
       with_items:
         - node6-lts
+        - docker
+        - docker-compose
+        - docker-machine
+        - docker-machine-driver-xhyve
+    - homebrew_tap:
+        name: codekitchen/dinghy
+    - shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+      become: yes
+    - shell: chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
+      become: yes
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
