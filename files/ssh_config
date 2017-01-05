@@ -6,8 +6,5 @@ ControlMaster auto
 ControlPath /tmp/%r@%h:%p
 ControlPersist yes
 
-Host *.cloud.kunstmaan.com
-   Port 9999
-
-Host git.kunstmaan.be
-   Port 9999
+Host *.settlemint.io
+   User root
