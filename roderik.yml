@@ -7,7 +7,7 @@
     - name: install node
       homebrew: name={{item}} state=latest
       with_items:
-        - node6-lts
+        - node
         - docker
         - docker-compose
         - docker-machine
