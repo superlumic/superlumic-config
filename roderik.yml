@@ -32,7 +32,6 @@
         - atom
         - bartender
         - sketch
-        - adobe-illustrator-cc
     - name: create ssh directory
       become: yes
       file:
