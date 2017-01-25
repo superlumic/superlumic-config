@@ -12,6 +12,10 @@
         - docker-compose
         - docker-machine
         - docker-machine-driver-xhyve
+        - apm-bash-completion
+        - brew-cask-completion
+        - docker-completion
+        - docker-compose-completion
     - homebrew_tap:
         name: codekitchen/dinghy
     - shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
