@@ -34,9 +34,18 @@
         - google-chrome
         - keepingyouawake
         - atom
-        - bartender
         - spotify
         - paw
+        - adobe-creative-cloud
+        - alfred
+        - dropbox
+        - google-drive
+        - grammarly
+        - handbrake
+        - jaxx
+        - mist
+        - robomongo
+        - skype
     - name: create ssh directory
       become: yes
       file:
