@@ -11,7 +11,6 @@
         - docker
         - docker-compose
         - docker-machine
-        - docker-machine-driver-xhyve
         - apm-bash-completion
         - brew-cask-completion
         - docker-completion
