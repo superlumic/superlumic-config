@@ -80,7 +80,7 @@
     - profile-developer
 
   vars:
-    - computername: mini
+    - computername: spectr
     - git_user_name: Roderik van der Veer
     - git_user_email: roderik@settlemint.io
     - osx_defaults:
