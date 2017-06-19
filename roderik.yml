@@ -4,6 +4,8 @@
   connection: local
 
   tasks:
+    - homebrew_tap:
+        name: codekitchen/dinghy  
     - name: install node
       homebrew: name={{item}} state=latest
       with_items:
@@ -14,8 +16,7 @@
         - docker-machine-driver-xhyve
         - apm-bash-completion
         - brew-cask-completion
-    - homebrew_tap:
-        name: codekitchen/dinghy
+        - dinghy
     - shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
       become: yes
     - shell: chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
