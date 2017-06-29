@@ -80,7 +80,7 @@
     - profile-developer
 
   vars:
-    - computername: spectr
+    - computername: moneta
     - git_user_name: Roderik van der Veer
     - git_user_email: roderik@settlemint.io
     - osx_defaults:
