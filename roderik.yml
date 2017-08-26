@@ -6,6 +6,8 @@
   tasks:
     - homebrew_tap:
         name: codekitchen/dinghy  
+    - homebrew_tap:
+        name: caskroom/fonts       
     - name: install node
       homebrew: name={{item}} state=latest
       with_items:
@@ -14,7 +16,6 @@
         - docker-compose
         - docker-machine
         - docker-machine-driver-xhyve
-        - apm-bash-completion
         - brew-cask-completion
         - dinghy
     - shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
@@ -29,7 +30,6 @@
         - tower
         - superduper
         - keepingyouawake
-        - atom
         - spotify
         - google-chrome
         - microsoft-office
@@ -41,7 +41,8 @@
         - grammarly
         - handbrake
         - jaxx
-        - mist
+        - visual-studio-code
+        - font-fira-code
     - name: create ssh directory
       become: yes
       file:
@@ -80,7 +81,7 @@
   vars:
     - computername: moneta
     - git_user_name: Roderik van der Veer
-    - git_user_email: roderik@settlemint.io
+    - git_user_email: roderik@settlemint.com
     - osx_defaults:
       - domain: 'com.apple.dock'
         key: 'autohide'
