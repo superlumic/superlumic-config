@@ -11,11 +11,7 @@
     - name: install node
       homebrew: name={{item}} state=latest
       with_items:
-        - node
-    - shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-      become: yes
-    - shell: chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
-      become: yes        
+        - node       
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
