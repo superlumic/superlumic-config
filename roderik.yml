@@ -12,12 +12,6 @@
       homebrew: name={{item}} state=latest
       with_items:
         - node
-        - docker
-        - docker-compose
-        - docker-machine
-        - docker-machine-driver-xhyve
-        - brew-cask-completion
-        - dinghy
     - shell: chown root:wheel $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
       become: yes
     - shell: chmod u+s $(brew --prefix)/opt/docker-machine-driver-xhyve/bin/docker-machine-driver-xhyve
@@ -30,7 +24,6 @@
         - tower
         - superduper
         - keepingyouawake
-        - spotify
         - google-chrome
         - microsoft-office
         - paw
@@ -39,7 +32,6 @@
         - dropbox
         - google-backup-and-sync
         - grammarly
-        - handbrake
         - jaxx
         - visual-studio-code
         - font-fira-code
