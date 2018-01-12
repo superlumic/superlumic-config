@@ -5,8 +5,6 @@
 
   tasks:
     - homebrew_tap:
-        name: codekitchen/dinghy  
-    - homebrew_tap:
         name: caskroom/fonts       
     - name: install node
       homebrew: name={{item}} state=latest
@@ -26,7 +24,6 @@
         - adobe-creative-cloud
         - alfred
         - dropbox
-        - google-backup-and-sync
         - grammarly
         - jaxx
         - visual-studio-code
