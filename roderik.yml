@@ -28,6 +28,7 @@
         - jaxx
         - visual-studio-code
         - font-fira-code
+        - google-drive-file-stream
     - name: create ssh directory
       become: yes
       file:
