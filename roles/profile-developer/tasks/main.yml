@@ -1,7 +1,7 @@
 ---
 
-- name: tap caskroom/versions
-  homebrew_tap: tap=caskroom/versions state=present
+- name: tap homebrew/cask-versions
+  homebrew_tap: tap=homebrew/cask-versions state=present
 
 - name: install developer brew applications
   homebrew: name={{item}} state=latest
