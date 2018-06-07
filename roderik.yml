@@ -5,7 +5,7 @@
 
   tasks:
     - homebrew_tap:
-        name: caskroom/fonts       
+        name: homebrew/cask-fonts     
     - name: install node
       homebrew: name={{item}} state=latest
       with_items:
