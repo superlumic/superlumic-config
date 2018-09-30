@@ -41,6 +41,7 @@
         - adguard
         - zoomus
         - whatsapp
+        - flux
     - name: create ssh directory
       become: yes
       file:
