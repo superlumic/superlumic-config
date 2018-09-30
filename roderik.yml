@@ -40,6 +40,7 @@
         - eid-be
         - adguard
         - zoomus
+        - whatsapp
     - name: create ssh directory
       become: yes
       file:
