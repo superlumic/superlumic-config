@@ -15,6 +15,7 @@
       with_items:
         - node    
         - jq
+        - nvm
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
