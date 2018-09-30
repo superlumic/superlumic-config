@@ -38,6 +38,7 @@
         - docker
         - eid-be
         - adguard
+        - zoomus
     - name: create ssh directory
       become: yes
       file:
