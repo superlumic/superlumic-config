@@ -4,12 +4,17 @@
   connection: local
 
   tasks:
-    - homebrew_tap:
-        name: homebrew/cask-fonts     
-    - name: install node
+    - name: homebrew taps
+      homebrew_tap: tap={{ item }} state=present
+      with_items:
+        - homebrew/cask-eid
+        - homebrew/cask-drivers
+        - homebrew/cask-fonts    
+    - name: install personal brew apps
       homebrew: name={{item}} state=latest
       with_items:
-        - node       
+        - node    
+        - jq
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
@@ -26,9 +31,13 @@
         - dropbox
         - grammarly
         - jaxx
-        - visual-studio-code
+        - visual-studio-code-insiders
         - font-fira-code
         - google-drive-file-stream
+        - telegram
+        - docker
+        - eid-be
+        - adguard
     - name: create ssh directory
       become: yes
       file:
