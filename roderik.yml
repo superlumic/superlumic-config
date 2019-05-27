@@ -42,8 +42,6 @@
         - adguard
         - zoomus
         - typora
-        - keybase
-        - gpg-suite
         - whatsapp
         - flux
     - name: create ssh directory
