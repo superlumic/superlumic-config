@@ -171,8 +171,8 @@
       - domain: 'com.apple.Safari'
         key: 'com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled'
         type: boolean
-        value: true
+        value: 'true'
       - domain: 'NSGlobalDomain'
         key: 'WebKitDeveloperExtras'
         type: boolean
-        value: true
+        value: 'true'
