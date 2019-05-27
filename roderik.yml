@@ -3,7 +3,7 @@
   connection: local
 
   vars_files:
-    - vars/{{ user_name }}-secrets.yml
+    - vars/roderik-secrets.yml
 
   tasks:
     - name: homebrew taps
