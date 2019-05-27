@@ -1,8 +1,6 @@
 ---
-
 - name: install cask applications for all users
   homebrew_cask: name={{item}} state=present
   with_items:
-    - vlc
+    # - vlc
     - keepingyouawake
-
