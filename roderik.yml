@@ -2,6 +2,9 @@
 - hosts: localhost
   connection: local
 
+  vars_files:
+    - vars/{{ user_name }}-secrets.yml
+
   tasks:
     - name: homebrew taps
       homebrew_tap: tap={{ item }} state=present
