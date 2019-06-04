@@ -35,7 +35,7 @@
         - alfred
         - dropbox
         - grammarly
-        - visual-studio-code-insiders
+        - visual-studio-code
         - font-fira-code
         - google-drive-file-stream
         - google-chrome
@@ -43,9 +43,12 @@
         - docker
         - adguard
         - zoomus
-        - typora
         - whatsapp
         - flux
+        - ledger-live
+        - mongodb-compass
+        - mycrypto
+
     - name: create ssh directory
       become: yes
       file:
@@ -91,16 +94,13 @@
       when: item.id not in mas_list.stdout_lines
       with_items:
         - { id: '409183694', name: 'Keynote' }
-        - { id: '540348655', name: 'Monosnap' }
         - { id: '1116599239', name: 'NordVPN IKE' }
-        - { id: '409907375', name: 'Remote Desktop' }
         - { id: '462058435', name: 'Microsoft Excel' }
         - { id: '747648890', name: 'Telegram' }
         - { id: '1142578753', name: 'OmniGraffle' }
         - { id: '1333542190', name: '1Password 7' }
         - { id: '407963104', name: 'Pixelmator' }
         - { id: '462062816', name: 'Microsoft PowerPoint' }
-        - { id: '1437501971', name: 'eID Connector' }
         - { id: '1289197285', name: 'MindNode' }
         - { id: '1384080005', name: 'Tweetbot' }
         - { id: '409203825', name: 'Numbers' }
@@ -109,6 +109,7 @@
         - { id: '408981434', name: 'iMovie' }
         - { id: '803453959', name: 'Slack' }
         - { id: '462054704', name: 'Microsoft Word' }
+        - { id: '975937182', name: 'Fantastical 2' }
 
   roles:
     - profile-all
@@ -119,6 +120,7 @@
     - git_user_name: Roderik van der Veer
     - git_user_email: roderik@settlemint.com
     - apple_id_email: roderik@vanderveer.be
+    - preferred_shell: zsh
     - osx_defaults:
         - domain: 'com.apple.dock'
           key: 'autohide'
