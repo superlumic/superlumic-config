@@ -48,6 +48,9 @@
         - ledger-live
         - mongodb-compass
         - mycrypto
+        - spotify
+        - sketch
+        - istat-menues
 
     - name: create ssh directory
       become: yes
