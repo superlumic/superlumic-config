@@ -19,6 +19,11 @@
         - jq
         - nvm
         - mas
+        - kubernetes-helm
+        - terraform
+        - kubectx
+        - doctl
+        - kubectl
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
@@ -51,7 +56,6 @@
         - spotify
         - sketch
         - istat-menues
-
     - name: create ssh directory
       become: yes
       file:
@@ -122,7 +126,7 @@
     - computername: hydra
     - git_user_name: Roderik van der Veer
     - git_user_email: roderik@settlemint.com
-    - preferred_shell: zsh
+    - preferred_shell: bash
     - apple_id_email: roderik@vanderveer.be
     - osx_defaults:
         - domain: 'com.apple.dock'
