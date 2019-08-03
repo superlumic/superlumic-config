@@ -5,10 +5,12 @@
   vars_files:
     - vars/roderik-secrets.yml
 
-  tasks:
-    - defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive"     "@e"
+  roles:
+    - roderik.osxdefaults
 
- 
+  tasks:
+    - name: add a shortcut for archive in mail
+      shell: defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@e"
 
   vars:
     - osx_defaults:
