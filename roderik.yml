@@ -14,6 +14,8 @@
       shell: defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@e"
 
   vars:
+    - git_user_name: Roderik van der Veer
+    - git_user_email: roderik@settlemint.com  
     - osx_defaults:
 # Appearance  
         - domain: 'NSGlobalDomain'
