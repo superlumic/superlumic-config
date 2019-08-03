@@ -6,7 +6,7 @@
     - vars/roderik-secrets.yml
 
   roles:
-    - osxdefaults
+    - roderik.superlumic-osx-defaults
 
   tasks:
     - name: add a shortcut for archive in mail
