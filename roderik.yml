@@ -6,4 +6,175 @@
     - vars/roderik-secrets.yml
 
   tasks:
+    - defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive"     "@e"
+
  
+
+  vars:
+    - osx_defaults:
+# Appearance  
+        - domain: 'NSGlobalDomain'
+          key: 'AppleInterfaceStyleSwitchesAutomatically'
+          type: integer
+          value: 1
+        - domain: 'NSGlobalDomain'
+          key: 'AppleWindowTabbingMode'
+          type: string
+          value: "always"         
+# Keyboard
+        - domain: 'NSGlobalDomain'
+          key: 'KeyRepeat'
+          type: integer
+          value: 2
+        - domain: 'NSGlobalDomain'
+          key: 'InitialKeyRepeat'
+          type: integer
+          value: 15
+        - domain: 'NSGlobalDomain'
+          key: 'NSAutomaticTextCompletionEnabled'
+          type: integer
+          value: 1   
+        - domain: 'NSGlobalDomain'
+          key: 'NSAutomaticSpellingCorrectionEnabled'
+          type: integer
+          value: 1          
+        - domain: 'NSGlobalDomain'
+          key: 'NSAutomaticQuoteSubstitutionEnabled'
+          type: integer
+          value: 1          
+        - domain: 'NSGlobalDomain'
+          key: 'NSAutomaticDashSubstitutionEnabled'
+          type: integer
+          value: 1 
+        - domain: 'NSGlobalDomain'
+          key: 'WebAutomaticSpellingCorrectionEnabled'
+          type: integer
+          value: 1           
+# Trackpad
+        - domain: 'NSGlobalDomain'
+          key: 'com.apple.trackpad.scaling'
+          type: integer
+          value: 3
+        - domain: 'com.apple.AppleMultitouchTrackpad'
+          key: 'Clicking'
+          type: integer
+          value: 1
+        - domain: 'com.apple.AppleMultitouchTrackpad'
+          key: 'FirstClickThreshold'
+          type: integer
+          value: 2     
+        - domain: 'com.apple.AppleMultitouchTrackpad'
+          key: 'SecondClickThreshold'
+          type: integer
+          value: 2     
+        - domain: 'com.apple.driver.AppleBluetoothMultitouch.trackpad'
+          key: 'Clicking'
+          type: integer
+          value: 1                         
+# Dock
+        - domain: 'com.apple.dock'
+          key: 'autohide'
+          type: integer
+          value: 1
+        - domain: 'com.apple.dock'
+          key: 'largesize'
+          type: integer
+          value: 85
+        - domain: 'com.apple.dock'
+          key: 'magnification'
+          type: integer
+          value: 1          
+        - domain: 'com.apple.dock'
+          key: 'showAppExposeGestureEnabled'
+          type: integer
+          value: 1                    
+        - domain: 'com.apple.dock'
+          key: 'minimize-to-application'
+          type: integer
+          value: 1
+        - domain: 'com.apple.dock'
+          key: 'show-process-indicators'
+          type: boolean
+          value: true
+        - domain: 'com.apple.dock'
+          key: 'orientation'
+          type: string
+          value: left
+        - domain: 'com.apple.dock'
+          key: 'tilesize'
+          type: float
+          value: 32
+        - domain: 'com.apple.dock'
+          key: 'autohide-time-modifier'
+          type: int
+          value: 0
+        - domain: 'com.apple.dock'
+          key: 'autohide-delay'
+          type: int
+          value: 0
+# Safari
+        - domain: 'com.apple.Safari'
+          key: 'IncludeInternalDebugMenu'
+          type: boolean
+          value: true
+        - domain: 'com.apple.Safari'
+          key: 'IncludeDevelopMenu'
+          type: boolean
+          value: true
+        - domain: 'com.apple.Safari'
+          key: 'WebKitDeveloperExtrasEnabledPreferenceKey'
+          type: boolean
+          value: true
+        - domain: 'com.apple.Safari'
+          key: 'com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled'
+          type: boolean
+          value: 'true'
+        - domain: 'NSGlobalDomain'
+          key: 'WebKitDeveloperExtras'
+          type: boolean
+          value: 'true'  
+        - domain: 'com.apple.Safari.SandboxBroker'
+          key: 'ShowDevelopMenu'
+          type: integer
+          value: 1            
+# Other          
+        - domain: 'NSGlobalDomain'
+          key: 'NSTableViewDefaultSizeMode'
+          type: integer
+          value: 1
+        - domain: 'com.apple.screencapture'
+          key: 'type'
+          type: string
+          value: png
+        - domain: 'com.apple.menuextra.clock'
+          key: 'DateFormat'
+          type: string
+          value: EEE MMM d  HH:mm
+        - domain: 'com.apple.menuextra.battery'
+          key: 'ShowPercent'
+          type: string
+          value: 'YES'
+        - domain: 'com.apple.finder'
+          key: 'FXPreferredViewStyle'
+          type: string
+          value: 'clmv'
+        - domain: 'NSGlobalDomain'
+          key: 'NSNavPanelExpandedStateForSaveMode'
+          type: boolean
+          value: true
+        - domain: 'NSGlobalDomain'
+          key: 'PMPrintingExpandedStateForPrint'
+          type: boolean
+          value: true
+        - domain: 'NSGlobalDomain'
+          key: 'NSQuitAlwaysKeepsWindows'
+          type: boolean
+          value: false
+        - domain: 'com.apple.desktopservices'
+          key: 'DSDontWriteNetworkStores'
+          type: boolean
+          value: true
+        - domain: 'com.apple.print.PrintingPrefs'
+          key: 'Quit When Finished'
+          type: boolean
+          value: true
