@@ -12,6 +12,65 @@
   tasks:
     - name: add a shortcut for archive in mail
       shell: defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Archive" "@e"
+    - name: install personal brew apps
+      homebrew: name={{item}} state=latest
+      with_items:
+        - jq
+        - nvm
+        - mas
+        - kubectl
+    - name: install personal cask applications
+      homebrew_cask: name={{item}} state=present
+      with_items:
+        - robo-3t
+        - plex-media-player
+        - kaleidoscope
+        - hazel
+        - tower
+        - superduper
+        - keepingyouawake
+        - paw
+        - alfred
+        - dropbox
+        - grammarly
+        - visual-studio-code
+        - font-fira-code
+        - google-drive-file-stream
+        - google-chrome
+        - telegram
+        - docker
+        - adguard
+        - zoomus
+        - whatsapp
+        - ledger-live
+        - mongodb-compass
+        - mycrypto
+        - spotify
+        - sketch
+        - istat-menus
+        - kubernetic
+        - microsoft-teams
+    - name: '[App Store] See which apps are already installed'
+      command: bash -c "mas list | cut -f 1 -d ' '"
+      register: mas_list
+    - name: '[App Store] Install Mac App Store applications'
+      command: mas install {{ item.id }}
+      when: item.id not in mas_list.stdout_lines
+      with_items:
+        - { id: '409183694', name: 'Keynote' }
+        - { id: '1116599239', name: 'NordVPN IKE' }
+        - { id: '462058435', name: 'Microsoft Excel' }
+        - { id: '1142578753', name: 'OmniGraffle' }
+        - { id: '1333542190', name: '1Password 7' }
+        - { id: '407963104', name: 'Pixelmator' }
+        - { id: '462062816', name: 'Microsoft PowerPoint' }
+        - { id: '1384080005', name: 'Tweetbot' }
+        - { id: '409203825', name: 'Numbers' }
+        - { id: '409201541', name: 'Pages' }
+        - { id: '408981434', name: 'iMovie' }
+        - { id: '803453959', name: 'Slack' }
+        - { id: '462054704', name: 'Microsoft Word' }
+        - { id: '1039633667', name: 'Irvue' }
 
   vars:
     - git_user_name: Roderik van der Veer
