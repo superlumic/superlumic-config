@@ -10,6 +10,7 @@
     - roderik.superlumic-homebrew
     - roderik.superlumic-cli
     - roderik.superlumic-computername
+    - roderik.superlumic-vim
     
   tasks:
     - name: add a shortcut for archive in mail
