@@ -23,6 +23,8 @@
         - mas
         - kubectl
         - kubectx
+        - fzf
+        - stern
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
