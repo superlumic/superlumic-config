@@ -25,37 +25,52 @@
         - kubectx
         - fzf
         - stern
+        - aws-iam-authenticator
+        - awscli
+        - azure-cli
+        - helm
+        - helmfile
+        - heroku
+        - k9s
+        - kompose
+        - kubeval
+        - nmap
+        - pwgen
+        - yarn
+        - yq
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
-        - robo-3t
-        - plex-media-player
         - kaleidoscope
         - hazel
         - tower
         - superduper
         - keepingyouawake
-        - paw
+        - calibre
+        - charles
+        - google-cloud-sdk
+        - imageoptim
+        - sidequest
+        - studio-3t
         - alfred
-        - dropbox
         - grammarly
+        - plex
+        - expandrive
+        - intellij-idea
+        - screens-connect
+        - cleanshot
         - visual-studio-code
         - font-fira-code
-        - google-drive-file-stream
+        - font-hack-nerd-font
         - google-chrome
-        - telegram
         - docker
         - adguard
         - zoomus
         - whatsapp
         - ledger-live
-        - mongodb-compass
-        - mycrypto
         - spotify
         - sketch
         - istat-menus
-        - kubernetic
-        - microsoft-teams
     - name: '[App Store] See which apps are already installed'
       command: bash -c "mas list | cut -f 1 -d ' '"
       register: mas_list
@@ -64,7 +79,6 @@
       when: item.id not in mas_list.stdout_lines
       with_items:
         - { id: '409183694', name: 'Keynote' }
-        - { id: '1116599239', name: 'NordVPN IKE' }
         - { id: '462058435', name: 'Microsoft Excel' }
         - { id: '1142578753', name: 'OmniGraffle' }
         - { id: '1333542190', name: '1Password 7' }
@@ -76,10 +90,15 @@
         - { id: '408981434', name: 'iMovie' }
         - { id: '803453959', name: 'Slack' }
         - { id: '462054704', name: 'Microsoft Word' }
-        - { id: '1039633667', name: 'Irvue' }
+        - { id: '904280696', name: 'Things' }
+        - { id: '425424353', name: 'The Unarchiver' }
+        - { id: '497799835', name: 'Xcode' }
+        - { id: '975937182', name: 'Fantastical' }
+        - { id: '1449412482', name: 'Reeder' }
+        - { id: '639968404', name: 'Parcel - Delivery Tracking' }
 
   vars:
-    - computername: hydra
+    - computername: gaia
     - preferred_shell: zsh  
     - git_user_name: Roderik van der Veer
     - git_user_email: roderik@settlemint.com  
