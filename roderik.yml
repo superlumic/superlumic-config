@@ -31,7 +31,6 @@
         - helm
         - helmfile
         - kompose
-        - kubeval
         - nmap
         - pwgen
         - yarn
