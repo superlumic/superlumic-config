@@ -30,7 +30,6 @@
         - azure-cli
         - helm
         - helmfile
-        - k9s
         - kompose
         - kubeval
         - nmap
