@@ -30,7 +30,6 @@
         - azure-cli
         - helm
         - helmfile
-        - heroku
         - k9s
         - kompose
         - kubeval
