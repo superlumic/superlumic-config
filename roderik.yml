@@ -32,6 +32,7 @@
         - helmfile
         - kompose
         - nmap
+        - derailed/k9s/k9s
         - pwgen
         - yarn
         - yq
@@ -59,6 +60,8 @@
         - visual-studio-code
         - font-fira-code
         - font-hack-nerd-font
+        - font-poppins
+        - sqlitemanager
         - google-chrome
         - docker
         - adguard
@@ -101,10 +104,6 @@
     - git_user_email: roderik@settlemint.com  
     - osx_defaults:
 # Appearance  
-        - domain: 'NSGlobalDomain'
-          key: 'AppleInterfaceStyleSwitchesAutomatically'
-          type: integer
-          value: 1
         - domain: 'NSGlobalDomain'
           key: 'AppleWindowTabbingMode'
           type: string
