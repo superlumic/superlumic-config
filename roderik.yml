@@ -98,7 +98,7 @@
         - { id: '639968404', name: 'Parcel - Delivery Tracking' }
 
   vars:
-    - computername: gaia
+    - computername: hydra
     - preferred_shell: zsh  
     - git_user_name: Roderik van der Veer
     - git_user_email: roderik@settlemint.com  
