@@ -39,6 +39,7 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
+        - font-meslo-for-powerline
         - kaleidoscope
         - hazel
         - tower
