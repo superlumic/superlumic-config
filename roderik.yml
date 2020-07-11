@@ -6,7 +6,7 @@
     - vars/roderik-secrets.yml
 
   roles:
-#    - roderik.superlumic-osx-defaults
+    - roderik.superlumic-osx-defaults
     - roderik.superlumic-homebrew
     - roderik.superlumic-cli
     - roderik.superlumic-computername
@@ -177,14 +177,14 @@
 #           key: 'tilesize'
 #           type: float
 #           value: 32
-#         - domain: 'com.apple.dock'
-#           key: 'autohide-time-modifier'
-#           type: int
-#           value: 0
-#         - domain: 'com.apple.dock'
-#           key: 'autohide-delay'
-#           type: int
-#           value: 0
+        - domain: 'com.apple.dock'
+          key: 'autohide-time-modifier'
+          type: int
+          value: 0
+        - domain: 'com.apple.dock'
+          key: 'autohide-delay'
+          type: int
+          value: 0
 # Safari
 #         - domain: 'com.apple.Safari'
 #           key: 'IncludeInternalDebugMenu'
