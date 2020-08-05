@@ -35,6 +35,8 @@
         - derailed/k9s/k9s
         - pwgen
         - yarn
+        - cocoapods
+        - watchman
         - yq
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
@@ -57,7 +59,12 @@
         - google-chrome
         - docker
         - zoomus
-        - whatsapp
+        - discord
+        - graphiql
+        - studio-3t
+        - microsoft-teams
+        - blue-jeans
+        - mqtt-explorer
         - ledger-live
         - spotify
         - sketch
@@ -82,6 +89,8 @@
         - { id: '425424353', name: 'The Unarchiver' }
         - { id: '1449412482', name: 'Reeder' }
         - { id: '639968404', name: 'Parcel - Delivery Tracking' }
+        - { id: '1482454543', name: 'Twitter' }
+        - { id: '1462114288', name: 'Grammarly for Safari' }
 
   vars:
     - computername: gaia
