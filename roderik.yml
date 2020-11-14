@@ -23,7 +23,6 @@
         - mas
         - kubectl
         - kubectx
-        - kubeval
         - fzf
         - stern
         - aws-iam-authenticator
