@@ -3,7 +3,7 @@
 collections:
   - name: https://github.com/ansible-collections/community.general.git
     type: git
-    version: master
+    version: main
     
 roles:
   - src: https://github.com/superlumic/ansible-role-homebrew.git
