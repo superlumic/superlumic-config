@@ -23,6 +23,7 @@
         - mas
         - kubectl
         - kubectx
+        - kubeval
         - fzf
         - stern
         - aws-iam-authenticator
@@ -31,10 +32,18 @@
         - helm
         - helmfile
         - kompose
+        - fastlane
+        - ethereum
+        - heroku
+        - htop
+        - minikube
+        - gh
+        - krew
         - nmap
         - derailed/k9s/k9s
         - pwgen
         - yarn
+        - starship
         - cocoapods
         - watchman
         - yq
@@ -59,6 +68,7 @@
         - google-chrome
         - docker
         - zoomus
+        - daisydisk
         - discord
         - graphiql
         - studio-3t
@@ -66,6 +76,7 @@
         - blue-jeans
         - mqtt-explorer
         - ledger-live
+        - lens
         - spotify
         - sketch
         - istat-menus
@@ -87,7 +98,7 @@
         - { id: '409201541', name: 'Pages' }
         - { id: '408981434', name: 'iMovie' }
         - { id: '425424353', name: 'The Unarchiver' }
-        - { id: '1449412482', name: 'Reeder' }
+        - { id: '1529448980', name: 'Reeder 5.' }
         - { id: '639968404', name: 'Parcel - Delivery Tracking' }
         - { id: '1482454543', name: 'Twitter' }
         - { id: '1462114288', name: 'Grammarly for Safari' }
