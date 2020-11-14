@@ -33,7 +33,6 @@
         - kompose
         - fastlane
         - ethereum
-        - heroku
         - htop
         - minikube
         - gh
